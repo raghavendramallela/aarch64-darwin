@@ -44,8 +44,24 @@
         nix.useDaemon = true;
         ids.gids.nixbld = 350;
 
-        environment.systemPackages =
-        [ ];
+        environment.systemPackages = [
+          # pkgs.vscode
+          pkgs.spotify
+          pkgs.neovim
+          pkgs.starship
+          pkgs.nushell
+          pkgs.git
+          pkgs.go
+          pkgs.gh
+          pkgs.bat
+          pkgs.kind
+          # pkgs.firefox
+          pkgs.google-chrome
+          pkgs.fastfetch
+          pkgs.iterm2
+          pkgs.kubectl
+          pkgs.direnv
+        ];
     };
 
   in

@@ -10,34 +10,35 @@
 
 # Makes sense for user specific applications that shouldn't be available system-wide
   home.packages = [
-    pkgs.neovim
-    pkgs.starship
-    pkgs.nushell
+    # pkgs.neovim
+    # pkgs.starship
+    # pkgs.nushell
     pkgs.nodejs_22
     pkgs.python3
     pkgs.chruby
     pkgs.ruby
-    pkgs.git
-    pkgs.go
-    pkgs.gh
-    pkgs.bat
-    pkgs.kind
-    pkgs.google-chrome
-    pkgs.fastfetch
-    pkgs.iterm2
-    pkgs.kubectl
-    pkgs.direnv
-    pkgs.spotify
-    pkgs.vscode
+    pkgs.snyk
+    # pkgs.git
+    # pkgs.go
+    # pkgs.gh
+    # pkgs.bat
+    # pkgs.kind
+    # pkgs.google-chrome
+    # pkgs.fastfetch
+    # pkgs.iterm2
+    # pkgs.kubectl
+    # pkgs.direnv
+    # pkgs.spotify
+    # pkgs.vscode
     # pkgs.bitwarden-cli
   ];
-#export NIXPKGS_ALLOW_UNFREE=1 && nix run nix-darwin --extra-experimental-features nix-command --extra-experimental-features flakes -- switch --flake ~/.config/nix --impure && darwin-rebuild switch --flake ~/.config/nix --impure
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
   };
 
   home.sessionVariables = {
+    NIXPKGS_ALLOW_UNFREE = 1 ;
   };
 
   home.sessionPath = [
