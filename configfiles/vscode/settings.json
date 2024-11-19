@@ -9,6 +9,7 @@
   "editor.fontSize": 12,
   "editor.fontFamily": "Monaco",
   "editor.fontLigatures": true,
+  "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "terminal.integrated.fontSize": 12
 }
