@@ -1,8 +1,8 @@
 {
-  "workbench.colorTheme": "Visual Studio Light",
+  "workbench.colorTheme": "Base16 Light Google",
   "workbench.activityBar.location": "bottom",
   "workbench.statusBar.visible": false,
-  "window.zoomLevel": 1.25,
+  "window.zoomLevel": 1,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
